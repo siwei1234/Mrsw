@@ -1,0 +1,5 @@
+﻿  1.c
+d:\c语言\mrsw\9.17\project9\project9\1.c(18): warning C4013: “system”未定义；假设外部返回 int
+d:\c语言\mrsw\9.17\project9\project9\1.c(5): warning C4101: “j”: 未引用的局部变量
+d:\c语言\mrsw\9.17\project9\project9\1.c(5): warning C4101: “i”: 未引用的局部变量
+  Project9.vcxproj -> D:\C语言\Mrsw\9.17\Project9\Debug\Project9.exe
