@@ -7,8 +7,12 @@ int main()
 			for(j=2;j<=i/2;j++)
 		{
 				if (i%j == 0)break;
-				if (j == i / 2)
+				
+				else{
+					if(j == i / 2)
 					printf("%d\t", i);
+				}
+
 		}
 		getchar();
 	return 0;
