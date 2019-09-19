@@ -9,7 +9,7 @@ float fun(int m, int n)
 		b = b * i;
 	for (i = 1; i <= (m - n); i++)
 		c = c * i;
-	return a/(b*c);
+	return a / (b*c);
 }
 int main()
 {
