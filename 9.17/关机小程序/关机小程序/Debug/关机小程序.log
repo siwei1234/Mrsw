@@ -1,0 +1,4 @@
+﻿  1.c
+d:\c语言\mrsw\9.17\关机小程序\关机小程序\1.c(6): warning C4013: “system”未定义；假设外部返回 int
+d:\c语言\mrsw\9.17\关机小程序\关机小程序\1.c(11): warning C4013: “strcmp”未定义；假设外部返回 int
+  关机小程序.vcxproj -> D:\C语言\Mrsw\9.17\关机小程序\Debug\关机小程序.exe
