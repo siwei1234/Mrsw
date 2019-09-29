@@ -1,0 +1,5 @@
+﻿  1.c
+d:\c语言\mrsw\9.17\汉诺塔\汉诺塔\1.c(7): warning C4098: “move”:“void”函数返回值
+d:\c语言\mrsw\9.17\汉诺塔\汉诺塔\1.c(21): warning C4098: “f_han”:“void”函数返回值
+d:\c语言\mrsw\9.17\汉诺塔\汉诺塔\1.c(25): warning C4101: “c”: 未引用的局部变量
+  汉诺塔.vcxproj -> D:\C语言\Mrsw\9.17\汉诺塔\Debug\汉诺塔.exe
