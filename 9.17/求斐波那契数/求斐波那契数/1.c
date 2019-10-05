@@ -1,5 +1,12 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
+int f_(int n)
+{
+	if (n > 2)
+		return f_(n - 1) + f_(n - 2);
+	else
+		return 1;
+}
 int f(int n)
 {
 	int a, c;
@@ -15,9 +22,11 @@ int f(int n)
 }
 int main()
 {
-	int a, b;
+	int a, b, c;
 	scanf("%d", &a);
 	b = f(a);
-	printf("%d", b);
+	printf("%d\n", b);
+	c = f_(a);
+	printf("%d\n", c);
 	return 0;
 }
