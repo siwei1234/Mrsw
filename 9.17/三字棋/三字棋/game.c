@@ -21,6 +21,10 @@ void player(char b[ROW][COL], int row, int col)
 				b[m - 1][n - 1] = '*';
 				break;
 			}
+			else
+			{
+				printf("输入错误，请重输入：\n");
+			}
 		}
 		else
 		{
@@ -127,20 +131,20 @@ void game()
 	while (1)
 	{
 		player(b, ROW, COL);
-		computer(b, ROW, COL);
-		remake(b, ROW, COL);
 		a = win(b, ROW, COL);
 		if ('#' == a)
 		{
 			printf("电脑赢\n"); break;
 		}
-	    if ('*' == a)
+		if ('*' == a)
 		{
 			printf("玩家赢\n"); break;
 		}
 		if ('q' == a)
-		 {
-			 printf("平局\n");
-		 }
+		{
+			printf("平局\n"); break;
+		}
+		computer(b, ROW, COL);
+		remake(b, ROW, COL);
 	}
 }
