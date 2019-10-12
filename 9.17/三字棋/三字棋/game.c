@@ -14,7 +14,7 @@ void player(char b[ROW][COL], int row, int col)
 	{
 		printf("请输入你的坐标：\n");
 		scanf("%d%d", &m, &n);
-		if (m >= 0 && m <= col && n >= 0 && n <= col)
+		if (m > 0 && m <= row && n > 0 && n <= col)
 		{
 			if (' ' == b[m - 1][n - 1])
 			{
@@ -25,10 +25,6 @@ void player(char b[ROW][COL], int row, int col)
 			{
 				printf("输入错误，请重输入：\n");
 			}
-		}
-		else
-		{
-			printf("输入错误，请重输入：\n");
 		}
 	}
 }
@@ -131,6 +127,7 @@ void game()
 	while (1)
 	{
 		player(b, ROW, COL);
+		remake(b, ROW, COL);
 		a = win(b, ROW, COL);
 		if ('#' == a)
 		{
@@ -146,5 +143,18 @@ void game()
 		}
 		computer(b, ROW, COL);
 		remake(b, ROW, COL);
+		a = win(b, ROW, COL);
+		if ('#' == a)
+		{
+			printf("电脑赢\n"); break;
+		}
+		if ('*' == a)
+		{
+			printf("玩家赢\n"); break;
+		}
+		if ('q' == a)
+		{
+			printf("平局\n"); break;
+		}
 	}
 }
