@@ -1,3 +1,3 @@
 ﻿  1.c
-d:\c语言\mrsw\9.17\字符串反向排列函数\字符串反向排列函数\1.c(10): warning C4716: “reverse_string”: 必须返回一个值
+d:\c语言\mrsw\9.17\字符串反向排列函数\字符串反向排列函数\1.c(16): warning C4716: “reverse_string”: 必须返回一个值
   字符串反向排列函数.vcxproj -> D:\C语言\Mrsw\9.17\字符串反向排列函数\Debug\字符串反向排列函数.exe
