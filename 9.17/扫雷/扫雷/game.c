@@ -148,6 +148,5 @@ void game()
 	init(b, ROW, COL);
 	show(b, ROW, COL);
 	set(a, ROW, COL);
-	show(a, ROW, COL);
 	win(a, b, ROWS, COLS);
 }
