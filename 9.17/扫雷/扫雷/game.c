@@ -50,6 +50,46 @@ void set(char a[ROWS][COLS], int row, int col)
 		}
 	}
 }
+void add(char a[ROWS][COLS], char b[ROWS][COLS], int i, int j)
+{
+	int m, n;
+	char x = 0;
+	if (a[i][j] != ' ')
+	{
+		a[i][j] = ' ';
+		for (m = i - 1; m <= i + 1; m++)
+		{
+			for (n = j - 1; n <= j + 1; n++)
+			{
+				{
+					if (a[m][n] != ' ') 
+					{
+						x = x + (a[m][n] - '0');
+					}
+				}
+			}
+		}
+		x = x + 48;
+		if (x != '0')
+		{
+			b[i][j] = x;
+		}
+		if (x == '0')
+		{
+			for (m = i - 1; m <= i + 1; m++)
+			{
+				for (n = j - 1; n <= j + 1; n++)
+				{
+					if (b[m][n] == '*')
+					{
+						b[m][n] = '0';
+						add(a, b, m, n);
+					}
+				}
+			}
+		}
+	}
+	}
 void win(char a[ROWS][COLS], char b[ROWS][COLS], int rows, int cols)
 {
 	int i = 0;
@@ -59,13 +99,22 @@ void win(char a[ROWS][COLS], char b[ROWS][COLS], int rows, int cols)
 	{
 		printf("请输入你要走的位置：\n");
 		scanf("%d%d", &i, &j);
-		if (i >= 0 && i <= 9 && j >= 0 && j <= 9)
+		if (i >= 0 && i <= 9 && j >= 0 && j <= 9 && b[i][j] == '*') 
 		{
 			if (a[i][j] == '0')
 			{
-				b[i][j] = a[i - 1][j - 1] + a[i - 1][j] + a[i - 1][j + 1] + a[i][j - 1] + a[i][j + 1] + a[i + 1][j - 1] + a[i + 1][j] + a[i + 1][j + 1] - '0' - '0' - '0' - '0' - '0' - '0' - '0';
-				count++;
+				add(a, b, i, j);
 				show(b, ROW, COL);
+				for (i = 1; i <= ROW; i++)
+				{
+					for (j = 1; j <= COL; j++)
+					{
+						if (b[i][j] != '*')
+						{
+							count++;
+						}
+					}
+				}
 				if (count == (81 - EASY))
 				{
 					printf("恭喜你，排雷成功。\n"); break;
@@ -99,5 +148,6 @@ void game()
 	init(b, ROW, COL);
 	show(b, ROW, COL);
 	set(a, ROW, COL);
+	show(a, ROW, COL);
 	win(a, b, ROWS, COLS);
 }

@@ -13,3 +13,4 @@ void init(char a[ROWS][COLS], int row, int col);
 void show(char a[ROWS][COLS], int row, int col);
 void set(char a[ROWS][COLS], int row, int col);
 void win(char a[ROWS][COLS], char b[ROWS][COLS], int rows, int cols);
+void add(char a[ROWS][COLS], char b[ROWS][COLS], int i, int j);
