@@ -1,25 +1,19 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
-int f(int a)
-{
-	int n = 0;
-	while (a)
-	{
-		if (a % 2 == 1)
-		{
-			n++;
-		}
-		a = a / 2;
-	}
-	return n;
-}
 int main()
 {
 	int a = 0;
-	int b;
+	int n = 0;
+	int i;
 	printf("«Î ‰»Î ˝◊÷£∫\n");
 	scanf("%d", &a);
-	b = f(a);
-	printf("%d", b);
+	for (i = 0; i < 32; i++)
+	{
+		if (((a >> i) & 1) == 1)
+		{
+			n++;
+		}
+	}
+	printf("%d", n);
 	return 0;
 }
