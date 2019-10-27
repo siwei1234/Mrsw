@@ -1,0 +1,4 @@
+﻿  1.c
+d:\c语言\mrsw\9.17\单词翻转\单词翻转\1.c(8): warning C4013: “strlen”未定义；假设外部返回 int
+d:\c语言\mrsw\9.17\单词翻转\单词翻转\1.c(41): warning C4013: “gets”未定义；假设外部返回 int
+  单词翻转.vcxproj -> D:\C语言\Mrsw\9.17\单词翻转\Debug\单词翻转.exe
