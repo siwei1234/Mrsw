@@ -1,0 +1,4 @@
+﻿  1.c
+d:\c语言\mrsw\9.17\分数序列\分数序列\1.c(11): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+d:\c语言\mrsw\9.17\分数序列\分数序列\1.c(13): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+  分数序列.vcxproj -> D:\C语言\Mrsw\9.17\分数序列\Debug\分数序列.exe
