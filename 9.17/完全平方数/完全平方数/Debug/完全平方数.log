@@ -1,0 +1,4 @@
+﻿  1.c
+d:\c语言\mrsw\9.17\完全平方数\完全平方数\1.c(10): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+d:\c语言\mrsw\9.17\完全平方数\完全平方数\1.c(11): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  完全平方数.vcxproj -> D:\C语言\Mrsw\9.17\完全平方数\Debug\完全平方数.exe
