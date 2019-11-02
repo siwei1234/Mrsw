@@ -1,0 +1,3 @@
+﻿  1.c
+d:\c语言\mrsw\9.17\二进制翻转输出值\二进制翻转输出值\1.c(9): warning C4244: “+=”: 从“double”转换到“unsigned int”，可能丢失数据
+  二进制翻转输出值.vcxproj -> D:\C语言\Mrsw\9.17\二进制翻转输出值\Debug\二进制翻转输出值.exe
