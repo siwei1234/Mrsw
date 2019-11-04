@@ -5,9 +5,7 @@ int main()
 	int a, b;
 	printf("请输入连个数字：\n");
 	scanf("%d%d", &a, &b);
-	int c = a >= b ? a : b;
-	int d = a <= b ? a : b;
-	double e = (c - d) / 2.0 + d;
-	printf("%lf", e);
+	int c = (a & b) + ((a ^ b) >> 1);
+	printf("%d", c);
 	return 0;
 }
