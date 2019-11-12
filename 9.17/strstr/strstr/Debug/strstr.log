@@ -1,0 +1,6 @@
+﻿  1.c
+d:\c语言\mrsw\9.17\strstr\strstr\1.c(18): warning C4090: “return”: 不同的“const”限定符
+d:\c语言\mrsw\9.17\strstr\strstr\1.c(33): warning C4133: “函数”: 从“int *”到“const char *”的类型不兼容
+d:\c语言\mrsw\9.17\strstr\strstr\1.c(31): warning C4133: “初始化”: 从“char [6]”到“int *”的类型不兼容
+d:\c语言\mrsw\9.17\strstr\strstr\1.c(32): warning C4133: “初始化”: 从“char [4]”到“int *”的类型不兼容
+  strstr.vcxproj -> D:\C语言\Mrsw\9.17\strstr\Debug\strstr.exe
