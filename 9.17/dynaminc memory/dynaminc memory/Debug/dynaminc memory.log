@@ -1,0 +1,4 @@
+﻿  1.c
+d:\c语言\mrsw\9.17\dynaminc memory\dynaminc memory\1.c(36): warning C4047: “!=”:“void *”与“int”的间接级别不同
+d:\c语言\mrsw\9.17\dynaminc memory\dynaminc memory\1.c(43): warning C4047: “!=”:“void *”与“int”的间接级别不同
+  dynaminc memory.vcxproj -> D:\C语言\Mrsw\9.17\dynaminc memory\Debug\dynaminc memory.exe
