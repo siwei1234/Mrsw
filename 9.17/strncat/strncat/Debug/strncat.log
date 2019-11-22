@@ -1,0 +1,3 @@
+﻿  test.c
+d:\c语言\mrsw\9.17\strncat\strncat\test.c(18): warning C4716: “my_strncat”: 必须返回一个值
+  strncat.vcxproj -> D:\C语言\Mrsw\9.17\strncat\Debug\strncat.exe
