@@ -70,7 +70,7 @@ struct student
 int main()
 {
 	struct student s = { "siwei",18 };
-	FILE* p = fopen("studet.dat", 'wb');
+	FILE* p = fopen("studet.dat", "wb");
 	if (p == NULL)
 	{
 		printf("打开文件失败\n");
