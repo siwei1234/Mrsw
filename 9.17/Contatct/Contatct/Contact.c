@@ -134,36 +134,36 @@ void ShowContact(p pc)
 		printf("***************************\n");
 	}
 }
-//void LoadData(p pc)
-//{
-//	member cur;
-//	FILE* pF = fopen("c.txt", 'rb');
-//	if (pF == NULL)
-//	{
-//		printf("文件打开失败\n");
-//		return;
-//	}
-//	while (fread(&cur, sizeof(member), 1, pF))
-//	{
-//		if (CheckCapacity(pc))
-//		{
-//			pc->data[pc->size] = cur;
-//			pc->size++;
-//		}
-//	}
-//	fclose(pF);
-//}
-//void SaveData(p pc)
-//{
-//	FILE* pF = fopen("c.txt", 'wb');
-//	if (pF == NULL)
-//	{
-//		printf("文件打开失败\n");
-//		return;
-//	}
-//	for (int i = 0; i < pc->size; i++)
-//	{
-//		fwrite(pc->data + i, sizeof(member), 1, pF);
-//	}
-//	fclose(pF);
-//}
+void LoadData(p pc)
+{
+	member cur;
+	FILE* pF = fopen("c.txt", "rb");
+	if (pF == NULL)
+	{
+		printf("文件打开失败\n");
+		return;
+	}
+	while (fread(&cur, sizeof(member), 1, pF))
+	{
+		if (CheckCapacity(pc))
+		{
+			pc->data[pc->size] = cur;
+			pc->size++;
+		}
+	}
+	fclose(pF);
+}
+void SaveData(p pc)
+{
+	FILE* pF = fopen("c.txt", "wb");
+	if (pF == NULL)
+	{
+		printf("文件打开失败\n");
+		return;
+	}
+	for (int i = 0; i < pc->size; i++)
+	{
+		fwrite(pc->data + i, sizeof(member), 1, pF);
+	}
+	fclose(pF);
+}

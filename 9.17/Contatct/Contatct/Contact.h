@@ -28,5 +28,5 @@ int FindContact(p pc, char* name);
 void ModifyContact(p pc);
 void SortContact(p pc);
 void ShowContact(p pc);
-//void LoadData(p pc);
-//void SaveData(p pc);
+void LoadData(p pc);
+void SaveData(p pc);

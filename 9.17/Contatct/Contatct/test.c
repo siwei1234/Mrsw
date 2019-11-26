@@ -22,7 +22,7 @@ int main()
 	int option = 0;
 	Contact a;
 	InitContact(&a);
-	/*LoadData(&a);*/
+	LoadData(&a);
 	do
 	{
 		menu();
@@ -54,6 +54,6 @@ int main()
 			printf(" ‰»Î¥ÌŒÛ°£\n");
 		}
 	} while (option);
-	/*SaveData(&a);*/
+	SaveData(&a);
 	return 0;
 }

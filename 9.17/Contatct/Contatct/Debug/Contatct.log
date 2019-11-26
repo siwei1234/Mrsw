@@ -1,6 +1,2 @@
-﻿  Contact.c
-d:\c语言\mrsw\9.17\contatct\contatct\contact.c(158): warning C4047: “函数”:“const char *”与“int”的间接级别不同
-d:\c语言\mrsw\9.17\contatct\contatct\contact.c(158): warning C4024: “fopen”: 形参和实参 2 的类型不同
-  test.c
-  正在生成代码...
+﻿  test.c
   Contatct.vcxproj -> D:\C语言\Mrsw\9.17\Contatct\Debug\Contact.exe
