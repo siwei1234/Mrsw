@@ -1,2 +1,4 @@
 ﻿  1.c
+d:\c语言\mrsw\9.17\file\file\1.c(73): warning C4047: “函数”:“const char *”与“int”的间接级别不同
+d:\c语言\mrsw\9.17\file\file\1.c(73): warning C4024: “fopen”: 形参和实参 2 的类型不同
   file.vcxproj -> D:\C语言\Mrsw\9.17\file\Debug\file.exe
