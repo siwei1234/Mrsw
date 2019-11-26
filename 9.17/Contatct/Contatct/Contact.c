@@ -36,6 +36,7 @@ int CheckCapacity(p pc)
 			return 0;
 		}
 	}
+	pc->capacity = pc->capacity + 10;
 	return 1;
 }
 void DelContact(p pc)
@@ -136,7 +137,7 @@ void ShowContact(p pc)
 //void LoadData(p pc)
 //{
 //	member cur;
-//	FILE* pF = fopen("test.txt", 'rb');
+//	FILE* pF = fopen("c.txt", 'rb');
 //	if (pF == NULL)
 //	{
 //		printf("文件打开失败\n");
@@ -154,7 +155,7 @@ void ShowContact(p pc)
 //}
 //void SaveData(p pc)
 //{
-//	FILE* pF = fopen("test.txt", 'wb');
+//	FILE* pF = fopen("c.txt", 'wb');
 //	if (pF == NULL)
 //	{
 //		printf("文件打开失败\n");

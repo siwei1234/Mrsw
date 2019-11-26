@@ -8,9 +8,7 @@ enum OPTION
 	SEA,
 	MOD,
 	SHOW,
-	SORT,
-	LOAD,
-	SAVE
+	SORT
 };
 void menu()
 {
@@ -24,6 +22,7 @@ int main()
 	int option = 0;
 	Contact a;
 	InitContact(&a);
+	/*LoadData(&a);*/
 	do
 	{
 		menu();
@@ -53,13 +52,8 @@ int main()
 			break;
 		default:
 			printf(" ‰»Î¥ÌŒÛ°£\n");
-	/*	case LOAD:
-			LoadData(&a);
-			break;
-		case SAVE:
-			SaveData(&a);
-			break;*/
 		}
 	} while (option);
+	/*SaveData(&a);*/
 	return 0;
 }
