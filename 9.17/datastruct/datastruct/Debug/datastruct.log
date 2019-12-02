@@ -1,0 +1,7 @@
+﻿  Table.c
+d:\c语言\mrsw\9.17\datastruct\datastruct\table.c(5): warning C4133: “=”: 从“SLDataType *”到“SeqList *”的类型不兼容
+d:\c语言\mrsw\9.17\datastruct\datastruct\table.c(28): warning C4133: “=”: 从“SLDataType *”到“SeqList *”的类型不兼容
+  test.c
+d:\c语言\mrsw\9.17\datastruct\datastruct\test.c(6): warning C4133: “函数”: 从“SLDataType *”到“SeqList *”的类型不兼容
+  正在生成代码...
+  datastruct.vcxproj -> D:\C语言\Mrsw\9.17\datastruct\Debug\datastruct.exe
