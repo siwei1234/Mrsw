@@ -18,27 +18,26 @@ List* removes(List* head, int val)
 {
 	List* tail = head;
 	List* prev = NULL;
-	List* next = NULL;
 	while (tail != NULL)
 	{
 		if (tail->data == val)
 		{
-			next = tail->next;
-			if(tail == head)
+			if (tail == head)
 			{
-				head = next;
+				head = tail->next;
 			}
 			else
 			{
-				prev->next = next;
+				prev->next = tail->next;
 			}
-			tail = next;
+			tail = tail->next;
 		}
 		else
 		{
 			prev = tail;
 			tail = tail->next;
 		}
+
 	}
 	return head;
 }
