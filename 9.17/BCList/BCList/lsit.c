@@ -57,7 +57,12 @@ void ListPushBack(ListNode* plist, LTDataType x)
 
 }
 // 双向链表尾删
-void ListPopBack(ListNode* plist);
+void ListPopBack(ListNode* plist)
+{
+	ListNode* prev = plist->prev;
+	plist->prev = prev->prev;
+	prev->prev->next = plist;
+}
 // 双向链表头插
 void ListPushFront(ListNode* plist, LTDataType x);
 // 双向链表头删

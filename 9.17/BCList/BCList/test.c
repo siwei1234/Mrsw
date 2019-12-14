@@ -8,6 +8,7 @@ int main()
 	ListPushBack(plist, 2);
 	ListPushBack(plist, 3);
 	ListPushBack(plist, 4);
+	ListPopBack(plist);
 	ListPrint(plist);
 	ListDestory(plist);
 }
