@@ -9,6 +9,10 @@ int main()
 	ListPushBack(plist, 3);
 	ListPushBack(plist, 4);
 	ListPopBack(plist);
+	ListPushFront(plist, 0);
+	ListPopFront(plist);
+	ListInsert(plist, 0);
+	ListErase(plist);
 	ListPrint(plist);
 	ListDestory(plist);
 }

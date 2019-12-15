@@ -62,14 +62,56 @@ void ListPopBack(ListNode* plist)
 	ListNode* prev = plist->prev;
 	plist->prev = prev->prev;
 	prev->prev->next = plist;
+	free(prev);
 }
 // 双向链表头插
-void ListPushFront(ListNode* plist, LTDataType x);
+void ListPushFront(ListNode* plist, LTDataType x)
+{
+	ListNode* new = check(x);
+	ListNode* next = plist->next;
+	plist->next = new;
+	new->prev = plist;
+	new->next = next;
+	next->prev = new;
+}
 // 双向链表头删
-void ListPopFront(ListNode* plist);
+void ListPopFront(ListNode* plist)
+{
+	ListNode* next = plist->next;
+	plist->next = next->next;
+	next->next->prev = plist;
+	free(next);
+}
 // 双向链表查找
-ListNode* ListFind(ListNode* plist, LTDataType x);
+ListNode* ListFind(ListNode* plist, LTDataType x)
+{
+	ListNode* head = plist;
+	plist = plist->next;
+	while (plist != head)
+	{
+		if (plist->data == x)
+		{
+			return plist;
+		}
+		plist = plist->next;
+	}
+	return NULL;
+}
 // 双向链表在pos的前面进行插入
-void ListInsert(ListNode* pos, LTDataType x);
+void ListInsert(ListNode* pos, LTDataType x)
+{
+	ListNode* new = check(x);
+	ListNode* next = pos->next;
+	pos->next = new;
+	new->prev = pos;
+	new->next = next;
+	next->prev = new;
+}
 // 双向链表删除pos位置的节点
-void ListErase(ListNode* pos);
+void ListErase(ListNode* pos)
+{
+	ListNode* prev = pos->prev;
+	pos->prev = prev->prev;
+	prev->prev->next = pos;
+	free(prev);
+}

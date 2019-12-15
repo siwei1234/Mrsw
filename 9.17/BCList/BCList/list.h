@@ -6,7 +6,7 @@ typedef struct ListNode
 {
 	int data;
 	struct ListNode* prev;
-	struct ListNpde* next;
+	struct ListNode* next;
 }ListNode;
 // 创建返回链表的头结点.
 ListNode* ListCreate();

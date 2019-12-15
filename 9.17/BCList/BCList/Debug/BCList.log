@@ -1,12 +1,4 @@
 ﻿  lsit.c
-d:\c语言\mrsw\9.17\bclist\bclist\lsit.c(9): warning C4133: “=”: 从“ListNode *”到“ListNpde *”的类型不兼容
-d:\c语言\mrsw\9.17\bclist\bclist\lsit.c(25): warning C4133: “=”: 从“ListNpde *”到“ListNode *”的类型不兼容
-d:\c语言\mrsw\9.17\bclist\bclist\lsit.c(16): warning C4133: “初始化”: 从“ListNpde *”到“ListNode *”的类型不兼容
-d:\c语言\mrsw\9.17\bclist\bclist\lsit.c(33): warning C4133: “=”: 从“ListNpde *”到“ListNode *”的类型不兼容
-d:\c语言\mrsw\9.17\bclist\bclist\lsit.c(37): warning C4133: “=”: 从“ListNpde *”到“ListNode *”的类型不兼容
-d:\c语言\mrsw\9.17\bclist\bclist\lsit.c(53): warning C4133: “=”: 从“ListNode *”到“ListNpde *”的类型不兼容
-d:\c语言\mrsw\9.17\bclist\bclist\lsit.c(54): warning C4133: “=”: 从“ListNode *”到“ListNpde *”的类型不兼容
-d:\c语言\mrsw\9.17\bclist\bclist\lsit.c(64): warning C4133: “=”: 从“ListNode *”到“ListNpde *”的类型不兼容
   test.c
   正在生成代码...
   BCList.vcxproj -> D:\C语言\Mrsw\9.17\BCList\Debug\BCList.exe
