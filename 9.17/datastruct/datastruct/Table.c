@@ -2,16 +2,16 @@
 #include "ds.h"
 void SeqListInit(SeqList* psl, size_t capacity)
 {
-	psl = (SLDataType*)malloc(sizeof(SLDataType) * 10);
 	psl->size = 0;
-	psl->capicity = 0;
+	psl->array = (SeqList*)malloc(sizeof(SeqList) * capacity);
+	psl->capicity = capacity;
 }
 void SeqListDestory(SeqList* psl)
 {
 	psl->size = 0;
 	psl->capicity = 0;
-	free(psl);
-	psl = NULL;
+	free(psl->array);
+	psl->array = NULL;
 }
 void SeqListPrint(SeqList* psl)
 {
@@ -22,17 +22,25 @@ void SeqListPrint(SeqList* psl)
 }
 void CheckCapacity(SeqList* psl)
 {
-	if (psl->size = psl->capicity)
+	if (psl->size == psl->capicity)
 	{
 		size_t newcapicity = psl->capicity < 0 ? 2 : psl->capicity * 2;
-		psl = (SLDataType*)realloc(0, sizeof(SLDataType)*newcapicity);
+		psl->array = (SeqList*)realloc(0, sizeof(SeqList)*newcapicity);
 		psl->capicity = newcapicity;
 	}
 }
 // 顺序表尾插
-//void SeqListPushBack(SeqList* psl, SLDataType x);
+void SeqListPushBack(SeqList* psl, SLDataType x)
+{
+	CheckCapacity(psl);
+	psl->array[psl->size] = x;
+	psl->size++;
+}
 // 顺序表尾删
-//void SeqListPopBack(SeqList* psl);
+void SeqListPopBack(SeqList* psl)
+{
+	psl->size--;
+}
 // 顺序表头插
 //void SeqListPushFront(SeqList* psl, SLDataType x);
 // 顺序表头删

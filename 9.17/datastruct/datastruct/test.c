@@ -1,12 +1,16 @@
 #define _CRT_SECURE_NO_WARNINGS 1	
 #include "ds.h"
-void test()
-{
-	SLDataType a;
-	SeqListInit(&a, 0);
-}
+
 int main()
 {
-	test();
+	SeqList a;
+	SeqListInit(&a, 10);
+	SeqListPushBack(&a, 0);
+	SeqListPushBack(&a, 1);
+	SeqListPushBack(&a, 2);
+	SeqListPushBack(&a, 3);
+	SeqListPopBack(&a);
+	SeqListPrint(&a);
+	SeqListDestory(&a);
 	return 0;
 }
