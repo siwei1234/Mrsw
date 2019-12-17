@@ -39,12 +39,34 @@ void SeqListPushBack(SeqList* psl, SLDataType x)
 // 顺序表尾删
 void SeqListPopBack(SeqList* psl)
 {
-	psl->size--;
+	if (psl->size != 0)
+	{
+		psl->size--;
+	}
 }
 // 顺序表头插
-//void SeqListPushFront(SeqList* psl, SLDataType x);
+void SeqListPushFront(SeqList* psl, SLDataType x)
+{
+	CheckCapacity(psl);
+	for (size_t i = psl->size; i > 0; i--)
+	{
+		psl->array[i] = psl->array[i - 1];
+	}
+	psl->array[0] = x;
+	psl->size++;
+}
 // 顺序表头删
-//void SeqListPopFront(SeqList* psl);
+void SeqListPopFront(SeqList* psl)
+{
+	if (psl->size != 0)
+	{
+		for (size_t i = 0; i < psl->size - 1; i++)
+		{
+			psl->array[i] = psl->array[i + 1];
+		}
+		psl->size--;
+	}
+}
 // 顺序表查找
 //int SeqListFind(SeqList* psl, SLDataType x);
 // 顺序表在pos位置插入x

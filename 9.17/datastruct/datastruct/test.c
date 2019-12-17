@@ -9,6 +9,8 @@ int main()
 	SeqListPushBack(&a, 1);
 	SeqListPushBack(&a, 2);
 	SeqListPushBack(&a, 3);
+	SeqListPushFront(&a, 0);
+	SeqListPopFront(&a);
 	SeqListPopBack(&a);
 	SeqListPrint(&a);
 	SeqListDestory(&a);
