@@ -68,8 +68,42 @@ void SeqListPopFront(SeqList* psl)
 	}
 }
 // 顺序表查找
-//int SeqListFind(SeqList* psl, SLDataType x);
+int SeqListFind(SeqList* psl, SLDataType x)
+{
+	for (size_t i = 0; i < psl->size; i++)
+	{
+		if (psl->array[i] == x)
+		{
+			return i;
+		}
+	}
+	return -1;
+}
 // 顺序表在pos位置插入x
-//void SeqListInsert(SeqList* psl, size_t pos, SLDataType x);
+void SeqListInsert(SeqList* psl, size_t pos, SLDataType x)
+{
+	if (psl->size < pos)
+	{
+		return;
+	}
+	CheckCapacity(psl);
+	for (size_t i = psl->size; i > pos; i--)
+	{
+		psl->array[i] = psl->array[i - 1];
+	}
+	psl->array[pos] = x;
+	psl->size++;
+}
 // 顺序表删除pos位置的值
-//void SeqListErase(SeqList* psl, size_t pos);
+void SeqListErase(SeqList* psl, size_t pos)
+{
+	if (psl->size < pos)
+	{
+		return;
+	}
+	for (size_t i = pos; i < psl->size - 1; i++)
+	{
+		psl->array[i] = psl->array[i + 1];
+	}
+	psl->size--;
+}

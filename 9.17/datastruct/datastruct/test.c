@@ -12,6 +12,8 @@ int main()
 	SeqListPushFront(&a, 0);
 	SeqListPopFront(&a);
 	SeqListPopBack(&a);
+	SeqListInsert(&a, 1, 50);
+	SeqListErase(&a, 0);
 	SeqListPrint(&a);
 	SeqListDestory(&a);
 	return 0;
