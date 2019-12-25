@@ -2,23 +2,20 @@
 // 初始化栈 
 void StackInit(Stack* ps)
 {
-	ps->_a = (int*)malloc(sizeof(int)*10);
-	ps->_capacity = 10;
+	ps->_a = NULL;
+	ps->_capacity = 0;
 	ps->_top = 0;
 }
-// 检查空间
-void check(Stack* ps)
-{
-	if (ps->_top == ps->_capacity)
-	{
-		ps->_capacity = ps->_capacity + 10;
-		ps->_a = (int*)realloc(0, sizeof(int)*(ps->_capacity));
-	}
-}
+
 // 入栈 
 void StackPush(Stack* ps, STDataType data)
 {
-	check(ps);
+	assert(ps);
+	if (ps->_top == ps->_capacity)
+	{
+		ps->_capacity = ps->_capacity + 10;
+		ps->_a = (STDataType*)realloc(ps->_a, sizeof(STDataType)*(ps->_capacity));
+	}
 	ps->_a[ps->_top] = data;
 	ps->_top++;
 }
