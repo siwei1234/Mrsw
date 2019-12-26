@@ -19,17 +19,17 @@ void SeqListDestory(SeqList* psl);
 void SeqListPrint(SeqList* psl);
 // 检查空间，如果满了，进行增容
 void CheckCapacity(SeqList* psl);
-// 顺序表尾插
-//void SeqListPushBack(SeqList* psl, SLDataType x);
-// 顺序表尾删
-//void SeqListPopBack(SeqList* psl);
-// 顺序表头插
-//void SeqListPushFront(SeqList* psl, SLDataType x);
+//顺序表尾插
+void SeqListPushBack(SeqList* psl, SLDataType x);
+//顺序表尾删
+void SeqListPopBack(SeqList* psl);
+//顺序表头插
+void SeqListPushFront(SeqList* psl, SLDataType x);
 // 顺序表头删
-//void SeqListPopFront(SeqList* psl);
-// 顺序表查找
-//int SeqListFind(SeqList* psl, SLDataType x);
-// 顺序表在pos位置插入x
-//void SeqListInsert(SeqList* psl, size_t pos, SLDataType x);
-// 顺序表删除pos位置的值
-//void SeqListErase(SeqList* psl, size_t pos);
+void SeqListPopFront(SeqList* psl);
+//顺序表查找
+int SeqListFind(SeqList* psl, SLDataType x);
+//顺序表在pos位置插入x
+void SeqListInsert(SeqList* psl, size_t pos, SLDataType x);
+//顺序表删除pos位置的值
+void SeqListErase(SeqList* psl, size_t pos);

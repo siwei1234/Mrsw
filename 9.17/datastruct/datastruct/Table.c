@@ -1,11 +1,13 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include "ds.h"
+// 顺序表初始化
 void SeqListInit(SeqList* psl, size_t capacity)
 {
 	psl->size = 0;
 	psl->array = (SeqList*)malloc(sizeof(SeqList) * capacity);
 	psl->capicity = capacity;
 }
+// 顺序表销毁
 void SeqListDestory(SeqList* psl)
 {
 	psl->size = 0;
@@ -13,6 +15,7 @@ void SeqListDestory(SeqList* psl)
 	free(psl->array);
 	psl->array = NULL;
 }
+// 顺序表打印
 void SeqListPrint(SeqList* psl)
 {
 	for (size_t i = 0; i < psl->size; i++)
@@ -20,6 +23,7 @@ void SeqListPrint(SeqList* psl)
 		printf("%d\n", psl->array[i]);
 	}
 }
+// 检查空间，如果满了，进行增容
 void CheckCapacity(SeqList* psl)
 {
 	if (psl->size == psl->capicity)
