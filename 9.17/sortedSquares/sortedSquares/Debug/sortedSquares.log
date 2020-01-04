@@ -1,0 +1,4 @@
+﻿  test.c
+d:\c语言\mrsw\9.17\sortedsquares\sortedsquares\test.c(4): warning C4013: “malloc”未定义；假设外部返回 int
+d:\c语言\mrsw\9.17\sortedsquares\sortedsquares\test.c(7): warning C4013: “abs”未定义；假设外部返回 int
+  sortedSquares.vcxproj -> D:\C语言\Mrsw\9.17\sortedSquares\Debug\sortedSquares.exe
