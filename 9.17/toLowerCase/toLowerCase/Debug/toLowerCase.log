@@ -1,0 +1,4 @@
+﻿  toLowerCase.c
+d:\c语言\mrsw\9.17\tolowercase\tolowercase\tolowercase.c(4): warning C4047: “!=”:“int”与“void *”的间接级别不同
+d:\c语言\mrsw\9.17\tolowercase\tolowercase\tolowercase.c(10): warning C4047: “!=”:“int”与“void *”的间接级别不同
+  toLowerCase.vcxproj -> D:\C语言\Mrsw\9.17\toLowerCase\Debug\toLowerCase.exe
