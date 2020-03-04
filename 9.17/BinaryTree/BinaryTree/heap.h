@@ -2,6 +2,7 @@
 #include<stdio.h>
 #include<malloc.h>
 #include<string.h>
+#include<time.h>
 typedef struct Heap
 {
 	int* a;
@@ -16,3 +17,5 @@ void HeapPop(Heap* hp);
 int HeapTop(Heap* hp);
 void HeapPrint(Heap* hp);
 void Adjustup(int*a, int child);
+void PrintfTopK(int* a, int n, int k);
+void HeapDestory(Heap* hp);

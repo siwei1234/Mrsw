@@ -89,3 +89,24 @@ int HeapTop(Heap* hp)
 {
 	return hp->a[0];
 }
+void PrintfTopK(int* a, int n, int k)
+{
+	Heap hp;
+	HeapCreate(&hp, a, k);
+	for (int i = k; i < n; i++)
+	{
+		if (HeapTop(&hp) < a[i])
+		{
+			HeapPop(&hp);
+			HeapPush(&hp, a[i]);
+		}
+	}
+	HeapPrint(&hp);
+}
+void HeapDestory(Heap* hp)
+{
+	free(hp->a);
+	hp->a = NULL;
+	hp->size = 0;
+	hp->capacity = 0;
+}
