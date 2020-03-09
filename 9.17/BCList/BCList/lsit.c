@@ -33,9 +33,10 @@ void ListPrint(ListNode* plist)
 	plist = plist->next;
 	while (plist != head)
 	{
-		printf("%d", plist->data);
+		printf("%d->", plist->data);
 		plist = plist->next;
 	}
+	printf("NULL");
 }
 ListNode* check(LTDataType x)
 {
