@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include<string.h>
 #include<malloc.h>
-void reverse(char* s, int left, int right)
+void reverse(char* ret, int left, int right)
 {
 	while (left < right)
 	{
-		char tmp = s[left];
-		s[left] = s[right];
-		s[right] = tmp;
+		char tmp = ret[left];
+		ret[left] = ret[right];
+		ret[right] = tmp;
 		left++;
 		right--;
 	}
@@ -16,7 +16,7 @@ char* reverseWords(char* s) {
 	int len = strlen(s);
 	int k = 0;
 	int left = 0;
-	char* ret = (char*)malloc(len);
+	char* ret = (char*)calloc((len+1), sizeof(char));
 	for (int i = len - 1; i >= 0; i--)
 	{
 		while (i >= 0)
@@ -37,12 +37,17 @@ char* reverseWords(char* s) {
 			left = k;
 		}
 	}
-	ret[--k] = '\0';
+	--k;
+	while (k >= 0 && ret[k] == ' ')
+	{
+		ret[k] = '\0';
+		k--;
+	}
 	return ret;
 }
 int main()
 {
-	char s[] = "  the sky  is blue!  ";
+	char s[] = " ";
 	char* ret = reverseWords(s);
 	printf("%s", ret);
 	return 0;
