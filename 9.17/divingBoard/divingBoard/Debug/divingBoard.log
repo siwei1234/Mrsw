@@ -1,0 +1,4 @@
+﻿  test.c
+d:\c语言\mrsw\9.17\divingboard\divingboard\test.c(10): warning C4033: “divingBoard”必须返回值
+d:\c语言\mrsw\9.17\divingboard\divingboard\test.c(26): warning C4715: “divingBoard”: 不是所有的控件路径都返回值
+  divingBoard.vcxproj -> D:\C语言\Mrsw\9.17\divingBoard\Debug\divingBoard.exe
