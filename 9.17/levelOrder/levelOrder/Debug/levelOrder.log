@@ -1,0 +1,4 @@
+﻿  test.c
+d:\c语言\mrsw\9.17\levelorder\levelorder\test.c(31): warning C4013: “memcpy”未定义；假设外部返回 int
+d:\c语言\mrsw\9.17\levelorder\levelorder\test.c(17): warning C4172: 返回局部变量或临时变量的地址: ret
+  levelOrder.vcxproj -> D:\C语言\Mrsw\9.17\levelOrder\Debug\levelOrder.exe
